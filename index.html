@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Streetwear</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: #fff;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: #ccc;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .banner {
+      background-image: url('https://images.unsplash.com/photo-1555529669-e69f86efc75e?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .banner h2 {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      font-size: 36px;
+      color: #fff;
+      border-radius: 10px;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .produto {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: 0.3s;
+    }
+
+    .produto:hover {
+      transform: scale(1.03);
+    }
+
+    .produto img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .produto-info {
+      padding: 15px;
+    }
+
+    .produto-info h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .produto-info p {
+      margin-bottom: 10px;
+      color: #aaa;
+    }
+
+    .produto-info span {
+      color: #00ff99;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>StreetStyle</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Produtos</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h2>Estilo Urbano em Cada Detalhe</h2>
+  </section>
+
+  <section class="produtos">
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1593032457869-979d7f3f581d?auto=format&fit=crop&w=600&q=80" alt="Camiseta Street">
+      <div class="produto-info">
+        <h3>Camiseta Oversized</h3>
+        <p>Conforto e estilo para o dia a dia.</p>
+        <span>R$ 129,90</span>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1583001044531-2683f56f3d3b?auto=format&fit=crop&w=600&q=80" alt="Moletom Street">
+      <div class="produto-info">
+        <h3>Moletom Estampado</h3>
+        <p>Ideal para os dias frios com atitude.</p>
+        <span>R$ 199,90</span>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1575814629071-b8aa628f9f4c?auto=format&fit=crop&w=600&q=80" alt="Boné Street">
+      <div class="produto-info">
+        <h3>Boné Snapback</h3>
+        <p>Estilo urbano para completar o visual.</p>
+        <span>R$ 79,90</span>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1624310480302-790deb57a3e0?auto=format&fit=crop&w=600&q=80" alt="Calça Cargo Street">
+      <div class="produto-info">
+        <h3>Calça Cargo</h3>
+        <p>Praticidade e estilo em um só look.</p>
+        <span>R$ 159,90</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 StreetStyle. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
